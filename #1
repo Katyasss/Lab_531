@@ -1,0 +1,21 @@
+import math
+import statistics
+import random
+
+#1
+
+def linear_structure18(a,b,c,d):
+    znamenatel = 2 * d * math.log(c / b)
+
+    stepen = -(3.5 / c) + math.log(abs(d))
+
+    return math.sqrt(a / pow(znamenatel, stepen))
+
+
+a = pow(10, 4)
+b = 10
+c = 0.1
+d = -3
+
+
+print(linear_structure18(a,b,c,d))
